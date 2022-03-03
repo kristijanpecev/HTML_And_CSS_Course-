@@ -47,7 +47,7 @@ hr {
 section#showcase {
     color: white;
     text-align: center;
-    background-image: url('/img/showcase.jpg');
+    background-image: url('./img/showcase.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     height: 50vh;
@@ -89,12 +89,12 @@ section#showcase {
   }
   .form-width {
       width: 200px;
-      height: 29px;
+      height: 39px;
   }
   section#boxes {
       display: flex;
-      justify-content: space-around;
-      padding: 40px 80px;
+      justify-content:space-evenly;
+      padding: 50px 80px;
   }
   .img-control {
       text-align:center;
