@@ -1,0 +1,20 @@
+section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.divOne {
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+.divTwo {
+    border-color: green;
+    border-width: 3px;
+    border-style: solid;
+}
+.divThree {
+    border-right-width: 10px ;
+    border-right-color: navy;
+    border-right-style:double;
+}
