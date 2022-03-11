@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+}
+header {
+    top: 0%;
+    background-color: orangered;
+    color: white;
+}
+ul {
+    float: right;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
