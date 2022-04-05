@@ -48,7 +48,6 @@ nav ul {
 nav ul li {
     font-size: 1.5em;
     font-family: 'Francois One', sans-serif;
-    border-top: 1px solid #fff;
 }
 nav ul li a {
     display: block;
@@ -123,7 +122,46 @@ footer p a {
 #weights, #cardio, #training {
     margin: 0 2%;
 }
-/* #exercises {
+.map{
+    border: 2px solid black;
+    width: 95%;
+    height: 50%;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 630px) {
+    /* Tablet Viewport: Show tablet-desktop lass, hide mobile class*/
+.tablet-desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+
+/* Tablet Viewport: Style rule for header*/
+header{
+    position: static;
+    padding-bottom: 2%;
+}
+/* Tablet Viewport: Styles for nav area*/
+nav li{
+    border-top: none ;
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+nav li:last-child {
+    border-right: none;
+}
+nav li a{
+    padding: 0.1em 0.75em;
+}
+/* Tablet Viewport: Style rules for main content area*/
+main ul{
+    margin: 0 0 4% 10%;
+}
+
+#exercises {
     clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -135,7 +173,64 @@ footer p a {
 }
 #exercises dd {
     padding: 0.5% 1% 2% 0;
-} */
+} 
+.tel-num{
+    font-size: 1.25em;
+}
+.map{
+   
+    width: 600px;
+    height: 450px;
+}
+}
+
+/* Media Query for desktop viewport*/
+@media screen and (min-width: 781px) {
+    /* Desktop Viewport: Styles for headere*/
+    header{
+        width: 25%;
+        float: left;
+        padding-bottom: 0; 
+    }
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li{
+        border: none;
+    }
+    nav ul li a{
+        padding: 0.5em 0.5em;
+    }
+        /*Desktop Viewport: Style rules for main content*/
+    main{
+        clear: both;
+    }
+    main h1{
+        font-size: 1.8em;
+    }
+    #weights, #cardio, #training  {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+    #exercises {
+        clear: both;
+    }
+}
+
+/* Media Query for large desktop viewport*/
+@media screen and (min-width: 1921px){
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+}
 #contact {
     text-align: center;
 }
@@ -143,9 +238,7 @@ footer p a {
     color: #666600;
     text-decoration: none;
 }
-nav li:first-child {
-    border-top: none;
-}
+
 
 .action {
     color: #666600;
@@ -160,12 +253,5 @@ nav li:first-child {
 .round {
     border-radius: 8px;
 }
-.map{
-    border: 2px solid black;
-    width: 95%;
-    height: 50%;
-}
 
-.contact-email-link{
 
-}
