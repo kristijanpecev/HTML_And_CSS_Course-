@@ -3,10 +3,11 @@
 Date: 31.03.2022
 File name: stules.css */
 
-body, header, footer, nav, main, footer,h1,ul,h2, div, img {
+body, header, footer, nav, main, footer,h1,ul,h2, div, img, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 
@@ -24,8 +25,6 @@ img {
 
 /*Style rule for header*/
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #000;
     height: 190px;
@@ -55,6 +54,10 @@ nav ul li a {
     padding: 0.5em 1em;
     text-decoration: none;
 }
+nav ul li a:hover{
+    color: #000;
+    background-color: #fff;
+}
 /*Show mobile class, hide tablet-desktop class */
 .mobile{
     display: block;
@@ -68,6 +71,9 @@ main {
     padding: 2%;
     font-size: 1.15em;
     font-family: 'Roboto Slab', serif
+}
+.mobile h3{
+    text-shadow: 5px 5px 8px #ccc;
 }
 
 .tel-link{
@@ -127,6 +133,51 @@ footer p a {
     width: 95%;
     height: 50%;
 }
+#contact {
+    text-align: center;
+}
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+
+.action {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.hours{
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+.frame{
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto; 
+}
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.grid-item4 {
+    grid-column: 1 / 5;
+    background-color: #ccc;s
+}
 
 /* Media query for tablet viewport */
 @media screen and (min-width: 630px) {
@@ -141,7 +192,6 @@ footer p a {
 
 /* Tablet Viewport: Style rule for header*/
 header{
-    position: static;
     padding-bottom: 2%;
 }
 /* Tablet Viewport: Styles for nav area*/
@@ -161,10 +211,22 @@ main ul{
     margin: 0 0 4% 10%;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.pic-text{
+    font-size: 1em;
+    padding: 10px;
+}
+
 #exercises {
     clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    background: linear-gradient(to right, #ccc, #fff);
     background-color: #F2F2F2;
     padding: 1% 2%;
 }
@@ -213,6 +275,17 @@ main ul{
     main h1{
         font-size: 1.8em;
     }
+    .pic-text{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    .frame{
+        opacity: 0.9;
+    }
+    .frame:hover{
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
     #weights, #cardio, #training  {
         width: 29%;
         float: left;
@@ -229,29 +302,8 @@ main ul{
         width: 1920px;
         margin: 0 auto;
     }
-    
-}
-#contact {
-    text-align: center;
-}
-#contact .contact-email-link {
-    color: #666600;
-    text-decoration: none;
+
 }
 
-
-.action {
-    color: #666600;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.hours{
-    margin-left: 10%;
-}
-
-.round {
-    border-radius: 8px;
-}
 
 
