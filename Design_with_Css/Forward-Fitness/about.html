@@ -6,11 +6,10 @@ Angelov-->
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initialscale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forward Fitness Club</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +22,7 @@ Angelov-->
         </header>
         <!--Use the nav area to add hyperlinks to other pages within the website-->
         <nav>
-            <ul>
+            <ul >
                 <li><a href="./index.html">Home</a></li> 
                 <li><a href="./about.html">About us</a></li> 
                 <li><a href="./classes.html">Classes</a></li>  
@@ -34,7 +33,7 @@ Angelov-->
         <!--Use the main area to add the main content of the web page-->
         <main>
 
-            <section id="weights">
+            <section id="waights">
 
                 <h1>Weights</h1>
 
@@ -44,7 +43,7 @@ Angelov-->
                     options. Build lean muscle with weights and improve your core with
                     weight training.</p>
 
-                <ul class="tablet-desktop">
+                <ul class="arrow-bullets tablet-desktop">
                     <li>Dumbells</li>
                     <li>Kattle bells</li>
                     <li>Barbe</li>
@@ -53,7 +52,7 @@ Angelov-->
 
             <section id="cardio">
                 <h1>Cardio</h1>
-                <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" class="round" />
+                <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" class="round"/>
                 <p>
                     Burn fat through cardio workouts.Experts recommend 150 minutes of
                     cardio each week. We have several equipment choices for your workout
@@ -67,7 +66,7 @@ Angelov-->
 
             <section id="training">
                 <h1>Personal training</h1>
-                <img src="./images/personal-trainer.jpg" alt="Personal Training" class="round" />
+                <img src="./images/personal-trainer.jpg" alt="Personal Training" class="round"/>
                 <p>
                     Our certified personal trainers work with you to help you obtain
                     your fitness goals and track your progress. Personal training has
@@ -92,12 +91,15 @@ Angelov-->
                         endurance. Begin in a standing position, drop into a squat and
                         extend your hands froward, kick your foot back and then forward
                         again quickly, and then jump up from a squatted position.
+                        <span class="viewex" onclick="burpees()">View Example</span>
                     </dd>
                     <dt>Plank</dt>
                     <dd>
                         Planks build your core strength. To perform a plank, get in a push
                         up position and rest your forearms on the floor. Hold the position
                         as long as you can.
+                        <span class="viewex" onclick="Plank()">View Example</span>
+
                     </dd>
                     <dt>Mountain Climber</dt>
                     <dd>
@@ -105,8 +107,15 @@ Angelov-->
                         the floor in a push up position, then bring one knee up to your
                         chest and then switch as quickly as you can (as though you are
                         climbing a mountain).
+                        <span class="viewex" onclick="MountainClimber()">View Example</span>
+
                     </dd>
                 </dl>
+                <video controls id="example">
+                    <source id="vid-src" src="" type="video/mp4"/>
+                    <track id="despsrc" src="des"  kind="descriptions" srclang="en" label="English Descriptions"/>
+                    <p>Your browser does not support the video element.</p>
+                  </video>
                 <p>
                     For more information about how to stay active, visit
                     <a href="https://www.hhs.gov/fitness/bc-active/index.html" target="_blank" class="external-link">fitness.gov</a>
@@ -119,6 +128,7 @@ Angelov-->
             <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
         </footer>
     </div>
+    <script src="./Scripts/script.js"></script>
 </body>
 
 </html>

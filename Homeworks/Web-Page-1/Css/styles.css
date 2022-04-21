@@ -1,0 +1,9 @@
+
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+nav ul{
+    display: flex;
+    top: 190px;
+}
