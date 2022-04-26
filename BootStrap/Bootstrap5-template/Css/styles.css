@@ -1,0 +1,23 @@
+nav{
+    position: relative;
+}
+.navbar-collapse{
+    padding-left: 850px;
+}
+.maincol{
+    padding-left: 400px;
+}
+.bi{
+    font-size: 30px;
+    background-color: rgb(0, 75, 195);
+    color: white;
+    padding: 3px;
+}
+.kiko{
+    padding-top: 20px;
+}
+.coldown{
+    text-align: center;
+    margin: 1em;
+    padding: 50px;
+}
